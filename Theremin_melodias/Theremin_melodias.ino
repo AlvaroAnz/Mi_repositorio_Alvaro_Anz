@@ -51,7 +51,7 @@ int calculo_distancia (int num1) {
   int distancia;//defino la variable en que guardo el resultado
 
   encender(TRIG);//envía el disparon el pin Trigger
-  delayMicroseconds(30);
+  delayMicroseconds(10);
   apagar(TRIG);
   num1 = pulseIn(ECO, HIGH);//recibe la señal el pin ECO
   distancia = num1 / 58.7; //ecuación para sacar distancia, 59 por que mi ultrasónico tiene 5 pines
