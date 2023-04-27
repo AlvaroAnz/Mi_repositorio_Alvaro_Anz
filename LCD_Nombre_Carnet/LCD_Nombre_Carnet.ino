@@ -29,7 +29,7 @@ void setup() {
 
   LCD_Alvaro.begin(columnas, filas);// Objeto de una lcd de 16 columnas x 2 filas
   LCD_Alvaro.print("Alvaro Anzueto");
-  delay(500);
+  delay(1000);
   LCD_Alvaro.setCursor(0, 1); // el cursor se mueve a columna 0 fila 1
   LCD_Alvaro.print("2019373");
 }
