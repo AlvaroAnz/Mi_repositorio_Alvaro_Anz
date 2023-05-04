@@ -1,3 +1,14 @@
+/*
+  Fundación Kinal
+  Centro Educativo Técnico Labral Kinal
+  Electrónica
+  Grado: Quinto
+  Sección: A
+  Curso: Taller de Electrónica Digital y Reparación de Computadoras I
+  Nombre: Álvaro Anzueto Rodas
+  Carné: 2019373
+*/
+
 //Incluyo mis librerias a usar
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
