@@ -122,22 +122,22 @@ int escaneo_color() {
 }
 
 void verificacion() {
-  if (resultado_verde > resultado_azul && resultado_verde > resultado_rojo) {
-    separacion();
+  if (resultado_verde > resultado_azul && resultado_verde > resultado_rojo) { //Si el resultado verde es el dominante
+    separacion();//Realiza la separación
   }
   else {
-    continuacion();
+    continuacion();//Lo omite
   }
 }
 
 void continuacion() {
-  Stepper_Banda.step(Revoluciones);
+  Stepper_Banda.step(Revoluciones);//Solo deja pasar la banda
 }
 
 void separacion() {
-  Stepper_Banda.step(1100);
+  Stepper_Banda.step(1100);//Avanza hacia el separador
   delay(tiempo);
-  Separador.write(180);
+  Separador.write(180);//Separa
   delay(tiempo);
-  Separador.write(0);
+  Separador.write(0);//Se regresa a su estado normal 
 }
