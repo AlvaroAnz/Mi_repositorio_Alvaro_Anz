@@ -53,7 +53,7 @@ void setup()
   pinMode(led_Rojo, OUTPUT);  //pin 5 como salida
   pinMode(Obstaculo, INPUT); //pin 7 como sensor de obstaculos
 
-  //Los leds van a iniciar apagadas
+  //Los leds van a iniciar apagadas y deja el servo en su posición inicial
   digitalWrite(led_Azul, LOW);
   digitalWrite(led_Verde, LOW);
   digitalWrite(led_Rojo, LOW);
@@ -63,19 +63,19 @@ void setup()
 void loop()
 {
 
-  if (digitalRead(Obstaculo) == LOW) {
-    escaneo_color();
-    verificacion();
-    delay(400);
+  if (digitalRead(Obstaculo) == LOW) {//Si el sensor de obstaculos detecta algo, para la banda y:
+    escaneo_color(); //Realiza un escaneo de color
+    verificacion(); //Y luego compara los datos guardados
+    delay(400); 
   }
-  else {
-    Stepper_Banda.step(100);
+  else { //Si no detecta nada
+    Stepper_Banda.step(100); //La banda sigue avanzando
   }
 
 }
 
 //******************FUNCIONES*****************************************
-int escaneo_color() {
+int escaneo_color() { //Por medio del RGB y LDR escanea el color del cubo
 
   //Enviendo el led rojo
   digitalWrite(led_Rojo, HIGH);
@@ -122,22 +122,22 @@ int escaneo_color() {
 }
 
 void verificacion() {
-  if (resultado_verde > resultado_azul && resultado_verde > resultado_rojo) {
-    separacion();
+  if (resultado_rojo > resultado_azul && resultado_rojo > resultado_verde) { //Si el resultado verde es el dominante
+    separacion();//Realiza la separación
   }
-  else {
-    continuacion();
+  else { //Si no lo es
+    continuacion();//Lo omite
   }
 }
 
 void continuacion() {
-  Stepper_Banda.step(Revoluciones);
+  Stepper_Banda.step(Revoluciones);//Solo deja pasar la banda
 }
 
 void separacion() {
-  Stepper_Banda.step(1100);
+  Stepper_Banda.step(1100);//Avanza hacia el separador
   delay(tiempo);
-  Separador.write(180);
+  Separador.write(180);//Separa
   delay(tiempo);
-  Separador.write(0);
+  Separador.write(0);//Se regresa a su estado normal 
 }
