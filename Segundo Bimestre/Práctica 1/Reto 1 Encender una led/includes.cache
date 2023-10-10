@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\standard"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Familia Anzueto\\Documents\\Arduino\\Archivos binarios\\Reto 1 Encender una led\\sketch\\Encender_una_led.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\Familia Anzueto\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\Familia Anzueto\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Familia Anzueto\\Documents\\Arduino\\Archivos binarios\\Práctica 1\\Reto 5 Semaforo de 2 vías\\sketch\\ISR_internas_timer.ino.cpp",
+    "Include": "Ticker.h",
+    "Includepath": "C:\\Users\\Familia Anzueto\\Documents\\Arduino\\libraries\\Ticker-main"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Familia Anzueto\\Documents\\Arduino\\Archivos binarios\\Práctica 1\\Reto 5 Semaforo de 2 vías\\sketch\\ISR_internas_timer.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Familia Anzueto\\Documents\\Arduino\\libraries\\Ticker-main\\Ticker.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

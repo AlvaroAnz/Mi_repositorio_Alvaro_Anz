@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\standard"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Familia Anzueto\\Documents\\Arduino\\binarios\\Reto 3 Contador 5 bits con leds\\sketch\\Contador_5_bits_leds.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
